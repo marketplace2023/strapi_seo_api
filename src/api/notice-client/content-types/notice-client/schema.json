@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notice_clients",
+  "info": {
+    "singularName": "notice-client",
+    "pluralName": "notice-clients",
+    "displayName": "Notice_Client",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cliente": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    },
+    "titulo_articulo": {
+      "type": "string"
+    },
+    "categoria": {
+      "type": "string"
+    },
+    "fecha_publicacion": {
+      "type": "datetime"
+    },
+    "etiquetas": {
+      "type": "richtext"
+    },
+    "contenido_del_articulo": {
+      "type": "richtext"
+    },
+    "titulo_meta": {
+      "type": "text"
+    },
+    "meta_descripcion": {
+      "type": "text"
+    },
+    "palabras_clave_meta": {
+      "type": "text"
+    }
+  }
+}

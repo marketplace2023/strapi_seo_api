@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "review_clients",
+  "info": {
+    "singularName": "review-client",
+    "pluralName": "review-clients",
+    "displayName": "Review_Client",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "publicar": {
+      "type": "boolean"
+    },
+    "nombre_album": {
+      "type": "string"
+    },
+    "categoria": {
+      "type": "string"
+    },
+    "etiquetas": {
+      "type": "richtext"
+    },
+    "ingrese_descripcion": {
+      "type": "richtext"
+    },
+    "titulo_meta": {
+      "type": "text"
+    },
+    "meta_descripcion": {
+      "type": "richtext"
+    },
+    "palabras_clave_meta": {
+      "type": "richtext"
+    },
+    "calificacion_experiencia": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "txts",
+  "info": {
+    "singularName": "txt",
+    "pluralName": "txts",
+    "displayName": "Txt",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "client": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    },
+    "nombre_empresa": {
+      "type": "string"
+    },
+    "nombres": {
+      "type": "string"
+    },
+    "apellidos": {
+      "type": "string"
+    },
+    "correo_electronico": {
+      "type": "email"
+    },
+    "contrasena": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "text"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "posicion": {
+      "type": "string"
+    },
+    "sitio_web": {
+      "type": "string"
+    },
+    "redes_sociales": {
+      "type": "richtext"
+    },
+    "slogan": {
+      "type": "string"
+    },
+    "inicio_de_operaciones": {
+      "type": "string"
+    },
+    "horarios": {
+      "type": "richtext"
+    },
+    "metodos_de_pago": {
+      "type": "richtext"
+    },
+    "certificaciones": {
+      "type": "string"
+    },
+    "especialidades": {
+      "type": "richtext"
+    },
+    "logros_premios": {
+      "type": "string"
+    },
+    "descripcion_corta_empresa": {
+      "type": "string"
+    },
+    "descripcion_larga_empresa": {
+      "type": "richtext"
+    },
+    "keywords": {
+      "type": "richtext"
+    },
+    "servicios": {
+      "type": "richtext"
+    },
+    "hashtags": {
+      "type": "richtext"
+    },
+    "areas_servicio": {
+      "type": "string"
+    }
+  }
+}

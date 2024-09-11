@@ -1,0 +1,142 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gbps",
+  "info": {
+    "singularName": "gbp",
+    "pluralName": "gbps",
+    "displayName": "GBP",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_empresa": {
+      "type": "string"
+    },
+    "tipo_de_negocio": {
+      "type": "enumeration",
+      "enum": [
+        "Venta minorista en línea",
+        "Tienda local",
+        "Empresa de servicios"
+      ]
+    },
+    "correo_electronico": {
+      "type": "email"
+    },
+    "categoria_empresa": {
+      "type": "string"
+    },
+    "areas_servicio": {
+      "type": "string"
+    },
+    "numero_telefono": {
+      "type": "string"
+    },
+    "sitio_web": {
+      "type": "string"
+    },
+    "pais_region": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "ciudad": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "codigo_postal": {
+      "type": "string"
+    },
+    "horarios": {
+      "type": "richtext"
+    },
+    "fotos_empresa": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "client": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    },
+    "pinterest": {
+      "type": "string"
+    },
+    "tiktok": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "Linkedin": {
+      "type": "string"
+    },
+    "descripcion_corta_empresa": {
+      "type": "string"
+    },
+    "opiniones_de_clientes": {
+      "type": "richtext"
+    },
+    "propiedades_destadas": {
+      "type": "richtext"
+    },
+    "citas_y_contactos": {
+      "type": "richtext"
+    },
+    "agencias_relacionadas": {
+      "type": "richtext"
+    },
+    "metodos_de_pago": {
+      "type": "richtext"
+    },
+    "hashtags": {
+      "type": "richtext"
+    },
+    "keywords": {
+      "type": "richtext"
+    },
+    "servicios_adicionales": {
+      "type": "richtext"
+    },
+    "slogan": {
+      "type": "string"
+    },
+    "inicio_de_operaciones": {
+      "type": "string"
+    },
+    "certificaciones": {
+      "type": "string"
+    },
+    "posicion": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "descripcion_larga_empresa": {
+      "type": "richtext"
+    }
+  }
+}

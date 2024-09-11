@@ -1,0 +1,393 @@
+{
+  "kind": "collectionType",
+  "collectionName": "citacions",
+  "info": {
+    "singularName": "citacion",
+    "pluralName": "citacions",
+    "displayName": "Citacion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "binglocal": {
+      "type": "string"
+    },
+    "wheretoapp": {
+      "type": "string"
+    },
+    "realtor": {
+      "type": "string"
+    },
+    "foursquare": {
+      "type": "string"
+    },
+    "client": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    },
+    "zillow": {
+      "type": "string"
+    },
+    "hotfrog": {
+      "type": "string"
+    },
+    "experience": {
+      "type": "string"
+    },
+    "merchantcircle": {
+      "type": "string"
+    },
+    "storeboard": {
+      "type": "string"
+    },
+    "brownbook": {
+      "type": "string"
+    },
+    "twidloo": {
+      "type": "string"
+    },
+    "cybo": {
+      "type": "string"
+    },
+    "n49": {
+      "type": "string"
+    },
+    "azbusinessfinder": {
+      "type": "string"
+    },
+    "ailoq": {
+      "type": "string"
+    },
+    "trepup": {
+      "type": "string"
+    },
+    "yplocal": {
+      "type": "string"
+    },
+    "osogbo": {
+      "type": "string"
+    },
+    "citypages": {
+      "type": "string"
+    },
+    "bpublic": {
+      "type": "string"
+    },
+    "fixerhub": {
+      "type": "string"
+    },
+    "quponing": {
+      "type": "string"
+    },
+    "adlocalpages": {
+      "type": "string"
+    },
+    "cleansway": {
+      "type": "string"
+    },
+    "peeplocal": {
+      "type": "string"
+    },
+    "businesssiccode": {
+      "type": "string"
+    },
+    "usenrollbusiness": {
+      "type": "string"
+    },
+    "trustlink": {
+      "type": "string"
+    },
+    "freelistingusa": {
+      "type": "string"
+    },
+    "techdirectory": {
+      "type": "string"
+    },
+    "fyple": {
+      "type": "string"
+    },
+    "akama": {
+      "type": "string"
+    },
+    "startus": {
+      "type": "string"
+    },
+    "yellowplace": {
+      "type": "string"
+    },
+    "locable": {
+      "type": "string"
+    },
+    "globalcatalog": {
+      "type": "string"
+    },
+    "cityof": {
+      "type": "string"
+    },
+    "findit": {
+      "type": "string"
+    },
+    "dealerbaba": {
+      "type": "string"
+    },
+    "anibookmark": {
+      "type": "string"
+    },
+    "bizinfe": {
+      "type": "string"
+    },
+    "yenino": {
+      "type": "string"
+    },
+    "yoys": {
+      "type": "string"
+    },
+    "qdexx": {
+      "type": "string"
+    },
+    "fireflylisting": {
+      "type": "string"
+    },
+    "bizista": {
+      "type": "string"
+    },
+    "bizratings": {
+      "type": "string"
+    },
+    "bubblelife": {
+      "type": "string"
+    },
+    "citysquares": {
+      "type": "string"
+    },
+    "cataloxy": {
+      "type": "string"
+    },
+    "homepros411": {
+      "type": "string"
+    },
+    "bizbangboom": {
+      "type": "string"
+    },
+    "bizmaker": {
+      "type": "string"
+    },
+    "onmap": {
+      "type": "string"
+    },
+    "catskillonline": {
+      "type": "string"
+    },
+    "iformative": {
+      "type": "string"
+    },
+    "whatsyourhours": {
+      "type": "string"
+    },
+    "announceamerica": {
+      "type": "string"
+    },
+    "bizmakersamerica": {
+      "type": "string"
+    },
+    "bizdiversitydirectory": {
+      "type": "string"
+    },
+    "bestincom": {
+      "type": "string"
+    },
+    "biztobiz": {
+      "type": "string"
+    },
+    "earthmom": {
+      "type": "string"
+    },
+    "directorios": {
+      "type": "string"
+    },
+    "nextbizmaker": {
+      "type": "string"
+    },
+    "askjaynee": {
+      "type": "string"
+    },
+    "dobusinesslocal": {
+      "type": "string"
+    },
+    "citylocalbiz": {
+      "type": "string"
+    },
+    "itecfinder": {
+      "type": "string"
+    },
+    "bizthistown": {
+      "type": "string"
+    },
+    "mybizweb": {
+      "type": "string"
+    },
+    "surpassconnect": {
+      "type": "string"
+    },
+    "digitalbusinessdirectoryonline": {
+      "type": "string"
+    },
+    "manta": {
+      "type": "string"
+    },
+    "cgmimm": {
+      "type": "string"
+    },
+    "freebusinessdirectory": {
+      "type": "string"
+    },
+    "cityfs": {
+      "type": "string"
+    },
+    "zipleaf": {
+      "type": "string"
+    },
+    "findlocal": {
+      "type": "string"
+    },
+    "ezlocal": {
+      "type": "string"
+    },
+    "findthebiz": {
+      "type": "string"
+    },
+    "linkcentre": {
+      "type": "string"
+    },
+    "searchmonster": {
+      "type": "string"
+    },
+    "provenexpert": {
+      "type": "string"
+    },
+    "localbusinesslisting": {
+      "type": "string"
+    },
+    "trueen": {
+      "type": "string"
+    },
+    "smallbusinessusa": {
+      "type": "string"
+    },
+    "verview": {
+      "type": "string"
+    },
+    "residential": {
+      "type": "string"
+    },
+    "fastexpert": {
+      "type": "string"
+    },
+    "cylex": {
+      "type": "string"
+    },
+    "yellowbot": {
+      "type": "string"
+    },
+    "salespider": {
+      "type": "string"
+    },
+    "infobel": {
+      "type": "string"
+    },
+    "localstar": {
+      "type": "string"
+    },
+    "ebusinesspages": {
+      "type": "string"
+    },
+    "bippermedia": {
+      "type": "string"
+    },
+    "homesandland": {
+      "type": "string"
+    },
+    "localtips": {
+      "type": "string"
+    },
+    "locnearme": {
+      "type": "string"
+    },
+    "geebo": {
+      "type": "string"
+    },
+    "ilisttech": {
+      "type": "string"
+    },
+    "thedots": {
+      "type": "string"
+    },
+    "tupalo": {
+      "type": "string"
+    },
+    "justlanded": {
+      "type": "string"
+    },
+    "apsense": {
+      "type": "string"
+    },
+    "alladdress": {
+      "type": "string"
+    },
+    "thecsraguides": {
+      "type": "string"
+    },
+    "chamberofcommerce": {
+      "type": "string"
+    },
+    "citiservi": {
+      "type": "string"
+    },
+    "insertbiz": {
+      "type": "string"
+    },
+    "agreatertown": {
+      "type": "string"
+    },
+    "findopen": {
+      "type": "string"
+    },
+    "usayellowpagesonline": {
+      "type": "string"
+    },
+    "a4everyone": {
+      "type": "string"
+    },
+    "bigbizstuff": {
+      "type": "string"
+    },
+    "bizbacklinks": {
+      "type": "string"
+    },
+    "bizbuildboom": {
+      "type": "string"
+    },
+    "bizlinkbuilder": {
+      "type": "string"
+    },
+    "blogbangboom": {
+      "type": "string"
+    },
+    "smallbizblog": {
+      "type": "string"
+    },
+    "thataiblog": {
+      "type": "string"
+    },
+    "callupcontact": {
+      "type": "string"
+    },
+    "findushere": {
+      "type": "string"
+    }
+  }
+}

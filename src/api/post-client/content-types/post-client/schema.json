@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "post_clients",
+  "info": {
+    "singularName": "post-client",
+    "pluralName": "post-clients",
+    "displayName": "Post_Client",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cliente": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    },
+    "titulo_articulo": {
+      "type": "string"
+    },
+    "aparece_en_inicio": {
+      "type": "boolean"
+    },
+    "categoria": {
+      "type": "string"
+    },
+    "fecha_publicacion": {
+      "type": "date"
+    },
+    "etiquetas": {
+      "type": "richtext"
+    },
+    "contenido_del_articulo": {
+      "type": "richtext"
+    },
+    "titulo_meta": {
+      "type": "text"
+    },
+    "meta_descripcion": {
+      "type": "text"
+    },
+    "palabras_clave_meta": {
+      "type": "text"
+    }
+  }
+}
