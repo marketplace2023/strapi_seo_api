@@ -38,6 +38,11 @@
     },
     "calificacion_experiencia": {
       "type": "richtext"
+    },
+    "cliente": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
     }
   }
 }

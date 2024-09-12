@@ -1086,6 +1086,73 @@ export interface ApiGbpGbp extends Schema.CollectionType {
   };
 }
 
+export interface ApiMetricMetric extends Schema.CollectionType {
+  collectionName: 'metrics';
+  info: {
+    singularName: 'metric';
+    pluralName: 'metrics';
+    displayName: 'Metric';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    nap_consistency_brightlocal: Attribute.RichText;
+    nap_consistency_google: Attribute.RichText;
+    local_citations_quantity_brightlocal: Attribute.RichText;
+    local_citations_quantity_google: Attribute.RichText;
+    citation_quality_brightlocal: Attribute.RichText;
+    citation_quality_google: Attribute.RichText;
+    reviews_ratings_brightlocal: Attribute.RichText;
+    reviews_ratings_google: Attribute.RichText;
+    referring_traffic_citations_brightlocal: Attribute.RichText;
+    referring_traffic_citations_google: Attribute.RichText;
+    local_pack_ranking_brightlocal: Attribute.RichText;
+    local_pack_ranking_google: Attribute.RichText;
+    local_backlinks_brightlocal: Attribute.RichText;
+    local_backlinks_google: Attribute.RichText;
+    domain_authority_brightlocal: Attribute.RichText;
+    domain_authority_google: Attribute.RichText;
+    social_media_engagement_brightlocal: Attribute.RichText;
+    social_media_engagement_google: Attribute.RichText;
+    gmb_profile_visibility_brightlocal: Attribute.RichText;
+    gmb_profile_visibility_google: Attribute.RichText;
+    cta_clicks_brightlocal: Attribute.RichText;
+    cta_clicks_google: Attribute.RichText;
+    review_response_time_brightlocal: Attribute.RichText;
+    review_response_time_google: Attribute.RichText;
+    local_mentions_brightlocal: Attribute.RichText;
+    local_mentions_google: Attribute.RichText;
+    directory_listing_updates_brightlocal: Attribute.RichText;
+    directory_listing_updates_google: Attribute.RichText;
+    ctr_brightlocal: Attribute.RichText;
+    ctr_google: Attribute.RichText;
+    local_search_impressions_brightlocal: Attribute.RichText;
+    local_search_impressions_google: Attribute.RichText;
+    cliente: Attribute.Relation<
+      'api::metric.metric',
+      'oneToOne',
+      'api::client.client'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::metric.metric',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::metric.metric',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiNoticeClientNoticeClient extends Schema.CollectionType {
   collectionName: 'notice_clients';
   info: {
@@ -1173,6 +1240,41 @@ export interface ApiPostClientPostClient extends Schema.CollectionType {
   };
 }
 
+export interface ApiProductImageProductImage extends Schema.CollectionType {
+  collectionName: 'product_images';
+  info: {
+    singularName: 'product-image';
+    pluralName: 'product-images';
+    displayName: 'product_image';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    cliente: Attribute.Relation<
+      'api::product-image.product-image',
+      'oneToOne',
+      'api::client.client'
+    >;
+    imagenes: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::product-image.product-image',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::product-image.product-image',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiReviewClientReviewClient extends Schema.CollectionType {
   collectionName: 'review_clients';
   info: {
@@ -1194,6 +1296,11 @@ export interface ApiReviewClientReviewClient extends Schema.CollectionType {
     meta_descripcion: Attribute.RichText;
     palabras_clave_meta: Attribute.RichText;
     calificacion_experiencia: Attribute.RichText;
+    cliente: Attribute.Relation<
+      'api::review-client.review-client',
+      'oneToOne',
+      'api::client.client'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1284,8 +1391,10 @@ declare module '@strapi/types' {
       'api::citacion.citacion': ApiCitacionCitacion;
       'api::client.client': ApiClientClient;
       'api::gbp.gbp': ApiGbpGbp;
+      'api::metric.metric': ApiMetricMetric;
       'api::notice-client.notice-client': ApiNoticeClientNoticeClient;
       'api::post-client.post-client': ApiPostClientPostClient;
+      'api::product-image.product-image': ApiProductImageProductImage;
       'api::review-client.review-client': ApiReviewClientReviewClient;
       'api::txt.txt': ApiTxtTxt;
     }

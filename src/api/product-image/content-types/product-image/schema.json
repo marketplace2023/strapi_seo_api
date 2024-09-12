@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_images",
+  "info": {
+    "singularName": "product-image",
+    "pluralName": "product-images",
+    "displayName": "product_image"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cliente": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    },
+    "imagenes": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

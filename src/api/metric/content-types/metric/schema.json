@@ -1,0 +1,117 @@
+{
+  "kind": "collectionType",
+  "collectionName": "metrics",
+  "info": {
+    "singularName": "metric",
+    "pluralName": "metrics",
+    "displayName": "Metric",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nap_consistency_brightlocal": {
+      "type": "richtext"
+    },
+    "nap_consistency_google": {
+      "type": "richtext"
+    },
+    "local_citations_quantity_brightlocal": {
+      "type": "richtext"
+    },
+    "local_citations_quantity_google": {
+      "type": "richtext"
+    },
+    "citation_quality_brightlocal": {
+      "type": "richtext"
+    },
+    "citation_quality_google": {
+      "type": "richtext"
+    },
+    "reviews_ratings_brightlocal": {
+      "type": "richtext"
+    },
+    "reviews_ratings_google": {
+      "type": "richtext"
+    },
+    "referring_traffic_citations_brightlocal": {
+      "type": "richtext"
+    },
+    "referring_traffic_citations_google": {
+      "type": "richtext"
+    },
+    "local_pack_ranking_brightlocal": {
+      "type": "richtext"
+    },
+    "local_pack_ranking_google": {
+      "type": "richtext"
+    },
+    "local_backlinks_brightlocal": {
+      "type": "richtext"
+    },
+    "local_backlinks_google": {
+      "type": "richtext"
+    },
+    "domain_authority_brightlocal": {
+      "type": "richtext"
+    },
+    "domain_authority_google": {
+      "type": "richtext"
+    },
+    "social_media_engagement_brightlocal": {
+      "type": "richtext"
+    },
+    "social_media_engagement_google": {
+      "type": "richtext"
+    },
+    "gmb_profile_visibility_brightlocal": {
+      "type": "richtext"
+    },
+    "gmb_profile_visibility_google": {
+      "type": "richtext"
+    },
+    "cta_clicks_brightlocal": {
+      "type": "richtext"
+    },
+    "cta_clicks_google": {
+      "type": "richtext"
+    },
+    "review_response_time_brightlocal": {
+      "type": "richtext"
+    },
+    "review_response_time_google": {
+      "type": "richtext"
+    },
+    "local_mentions_brightlocal": {
+      "type": "richtext"
+    },
+    "local_mentions_google": {
+      "type": "richtext"
+    },
+    "directory_listing_updates_brightlocal": {
+      "type": "richtext"
+    },
+    "directory_listing_updates_google": {
+      "type": "richtext"
+    },
+    "ctr_brightlocal": {
+      "type": "richtext"
+    },
+    "ctr_google": {
+      "type": "richtext"
+    },
+    "local_search_impressions_brightlocal": {
+      "type": "richtext"
+    },
+    "local_search_impressions_google": {
+      "type": "richtext"
+    },
+    "cliente": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    }
+  }
+}
